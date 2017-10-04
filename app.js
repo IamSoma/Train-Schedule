@@ -6,5 +6,7 @@
     storageBucket: "trainschedule-57c42.appspot.com",
     messagingSenderId: "974399855907"
   };
-  
+
   firebase.initializeApp(config);
+  
+  moment().format();
