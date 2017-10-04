@@ -1,0 +1,13 @@
+h1 {
+	text-align: center;
+}
+h2 {
+	background-color: black;
+}
+
+.trainAdder{
+	border: 10px;
+	border-style: solid;
+	border-color: black;
+
+}
