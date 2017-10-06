@@ -13,7 +13,7 @@ firebase.initializeApp(config);
 var trainData = firebase.database();
 
 trainData.ref().on("value" ,function(snapshot){
-  console.log(snapshot.val().something);
+  //use to console.log firebase data.
 })
 
 $("#trainBtn").on("click", function(){
@@ -28,7 +28,7 @@ $("#trainBtn").on("click", function(){
   		frequency: frequency 
   	}
   	trainData.ref().push(newTrain);
-  	alert('train added');
+  	alert('Firebase has Data!!!!!');
 
   	$('#trainName').val("");
   	$('#destination').val("");
@@ -42,7 +42,7 @@ $("#trainBtn").on("click", function(){
     var name = snapshot.val().name;
     var destination = snapshot.val().destination;
     var frequency = snapshot.val().frequency;
-    var trainTime = snapshot.val().trainTime;
+    var trainTime = snapshot.val().time;
 
     var remainder = moment().diff(moment.unix(trainTime), "minutes")%frequency;
     var minutes = frequency - remainder;

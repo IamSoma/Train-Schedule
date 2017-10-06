@@ -1,11 +1,13 @@
-/*h1 {
-	text-align: center;
+
+div.jumbotron {
+	background-image: url("../Train-Schedule/train.png");
+	color: red;
+	background-size: contain;
 }
 
-.trainAdder{
-	border: 10px;
-	border-style: solid;
-	border-color: black;
-
+h2 {
+    padding: 20px;
+    border: 5px;
+    border-style: solid;
 }
-*/
+
